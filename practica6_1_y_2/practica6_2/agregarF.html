@@ -1,0 +1,56 @@
+<!-- Este es el archivo que nos permite agregar nuevos registros en la tabla de 
+	futbolistas-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica 06</title>
+	<!-- necesitamos una conexión a internet para poder ver los estilos-->
+	<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+<body>
+	<div>
+		<div class="row column text-center"> <!--Aquí agregamos ciertos estilos a la tabla
+			y al contenido de la tabla que vamos a mostrar-->
+			<h1>Agregar nuevo futbolista</h1>
+		</div>
+		
+		<form action="agregarF.php" method="POST"> <!--Utilizamos el metodo post 
+			para poder pasar toda la información al archivo que se va a encargar de 
+			llenar el registro en la tabla.-->
+			<div class="row column">
+		<div class="callout success">
+ 		<table width="50%">
+				<tbody>
+					<tr>
+						<td><label>Nombre:</label></td><!--Se empiezan a llenar todos los datos y dejamos los campos-->
+						<td><input id="txtNombre" name="nombre" type="text" required="required"></td>
+					</tr>
+					<tr>
+						<td><label>Posicion:</label></td><!--como requeridos, para que así no nos falten campos-->
+						<td><input id="txtApellidos" name="posicion" type="text" required="required"></td>
+					</tr>
+					<tr>
+						<td><label>Carrera:</label></td>
+						<td><input id="txtCarrera" name="carrera" type="text"  required="required"></td>
+					</tr>
+					<tr>
+						<td><label>Email:</label></td>
+						<td><input id="txtFechaIngreso" name="email" type="text" required="required"></td>
+					</tr>
+					<tr>
+						<td></td> <!--Botón que se encarga de agregar e iniciar la operación del archivo que tenía
+						el form para poder realizar el registro.-->
+						<td><input id="btnAgregar" name="agregar" value="AGREGAR" class="button" type="submit">
+						<a href="index.php" class="button" style="text-decoration: none; color: white;" type="submit">CANCELAR</a><!--Botón que cancela la acción que estamos por realizar-->
+						</td>
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		</form>
+	</div>
+</body>
+</html>

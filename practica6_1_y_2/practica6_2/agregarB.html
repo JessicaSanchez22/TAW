@@ -1,0 +1,56 @@
+<!--Este archivo nos sirve para agregar nuevos jugadores basquetbolistas
+	a la tabla de basquetbolistas de nuestra base de datos-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practica 06</title>
+	<!--Se necesita conexión a internet para poder ver los estilos utilizados en este archivo-->
+	<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+<body>
+	<div>
+		<h1>Agregar nuevo basquetbolista</h1>
+	</div>
+	<!--Utilizamos un form con el metodo POST para poder leer los valores
+		de los campos que posee, más adelante. Este form también utiliza el archivo agregarB.php 
+		que es donde se procesa la acción de agregar a la tabla nuevos valores. -->
+		<form action="agregarB.php" method="POST">
+			<div class="row column">
+		<div class="callout success">
+ 		<table width="50%">
+				<tbody>
+					<!--A continuación en una tabla se muestran los campos en blanco para que el usuario agregue nuevos
+						registros a la tabla-->
+					<tr>
+						<td><label>Nombre:</label></td>
+						<td><input id="txtNombre" name="nombre" type="text" required="required"></td>
+					</tr>
+					<tr>
+						<td><label>Posicion:</label></td>
+						<td><input id="txtApellidos" name="posicion" type="text" required="required"></td>
+					</tr>
+					<tr>
+						<td><label>Carrera:</label></td>
+						<td><input id="txtCarrera" name="carrera" type="text"  required="required"></td>
+					</tr>
+					<tr>
+						<td><label>Email:</label></td>
+						<td><input id="txtFechaIngreso" name="email" type="text" required="required"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<!--Por último viene el botón de agregar, este botón ejecuta la acción de agregar el usuario nuevo-->
+						<td><input id="btnAgregar" name="agregar" value="AGREGAR" class="button" type="submit">
+						<!--También tenemos el botón de cancelar, que nos saca del formulario y nos regresa a la página principal-->
+						<a href="index.php" class="button" style="text-decoration: none; color: white;" type="submit">CANCELAR</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+		</form>
+	</div>
+</body>
+</html>
