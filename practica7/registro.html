@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!--Necesitamos internet para poder ver los estilos-->
+	<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+<body>
+	<div id="signup">
+<h3>Registro</h3>
+<form method="post" action="registro.php" name="signup">
+	<!--El form utiliza el archivo de registro.php y le pasa los datos a través
+		del metodo post-->
+	<div class="row column" style="width: 50%;">
+		<div class="callout success">
+<label>Nombre de usuario</label>
+<!--Solicitamos el nombre de usuario-->
+<input type="text" name="username" autocomplete="off" />
+<label>Contraseña</label>
+<!--Solicitamos la contraseña-->
+<input type="password" name="password" autocomplete="off"/>
+<div class="errorMsg"><?php echo $errorMsgReg; ?></div>
+<input type="submit" class="button" name="signupSubmit" value="Registrarse">
+<!--Ponemos el botón de registrarnos y de cancelar la acción-->
+<a href="index.php" class="button" style="color: white;">Cancelar</a>
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>

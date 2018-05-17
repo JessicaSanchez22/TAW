@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!--Los estilos necesitan internet para verse-->
+	<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+<body>
+	<h1>Login de Usuarios</h1> <!--Aquí creamos el login de los usuarios-->
+	<form action="checklogin.php" method="post" >
+		<div class="row column" style="width: 50%;">
+		<div class="callout success">
+	<label>Nombre Usuario:</label><br> <!--Insertamos el nombre de usuario-->
+	<input name="username" type="text" id="username" required>
+	<label>Password:</label><br><!--Solicitamos la contraseña-->
+	<input name="password" type="password" id="password" required>
+	<input type="submit" name="Submit" value="Ingresar" class="button">
+	<!--Y tenemos por ultimo, el botón de Cancelar y de Registrar-->
+	<a href="index.php" class="button" style="color: white;">Cancelar</a>
+</div>
+</div>
+	</form>
+</body>
+</html>

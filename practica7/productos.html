@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Insertar productos</title>
+	<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+<body>
+	<h1>Inserte un nuevo producto</h1>
+	<form action="productos.php" method="post" > <!--Utilizamos el procesamiento que está en productos.php-->
+		<div class="row column" style="width: 50%;">
+		<div class="callout success">
+			<label>Nombre del producto:</label><br> <!--Pedimos el nombre del producto-->
+			<input name="productname" type="text" id="productname" required="required">
+			<label>Precio del producto:</label><br> <!--Y el precio de producto-->
+			<input name="productprice" type="text" id="productprice" required="required">
+			<!--Por otro lado, tenemos los botones de agregar y de cancelar-->
+			<input type="submit" name="Submit" value="Agregar producto" class="button">
+			<a href="index.php" style="color: white;" class="button">Cancelar</a>
+		</div>
+		</div>
+	</form>
+</body>
+</html>
