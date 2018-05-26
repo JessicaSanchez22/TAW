@@ -5,7 +5,8 @@ class Paginas{
 	public function enlacesPaginasModel($enlaces){
 
 		if($enlaces == "ingresar" || $enlaces == "registro" || $enlaces == "editarMaestro" || $enlaces == "salir" || $enlaces=="registroMaestro" || $enlaces=="alumnos" || $enlaces=="registroAlumno"
-			|| $enlaces == "editarAlumno" || $enlaces=="maestros"){
+			|| $enlaces == "editarAlumno" || $enlaces=="maestros" || $enlaces=="registroCarrera"
+			|| $enlaces=="carreras" || $enlaces=="editarCarrera"){
 
 			$module =  "views/modules/".$enlaces.".php";
 		
@@ -51,6 +52,12 @@ class Paginas{
 		else if($enlaces == "cambioM"){
 
 			$module =  "views/modules/maestros.php";
+		
+		}
+
+		else if($enlaces == "cambioC"){
+
+			$module =  "views/modules/carreras.php";
 		
 		}
 

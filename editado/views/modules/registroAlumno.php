@@ -9,7 +9,6 @@ if(!$_SESSION["validar"]){
 	exit();
 
 }
-
 ?>
 
 <h1>REGISTRO DE ALUMNOS</h1>
