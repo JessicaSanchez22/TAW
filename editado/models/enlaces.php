@@ -6,7 +6,8 @@ class Paginas{
 
 		if($enlaces == "ingresar" || $enlaces == "registro" || $enlaces == "editarMaestro" || $enlaces == "salir" || $enlaces=="registroMaestro" || $enlaces=="alumnos" || $enlaces=="registroAlumno"
 			|| $enlaces == "editarAlumno" || $enlaces=="maestros" || $enlaces=="registroCarrera"
-			|| $enlaces=="carreras" || $enlaces=="editarCarrera"){
+			|| $enlaces=="carreras" || $enlaces=="editarCarrera" || $enlaces=="registroTutorias" 
+			|| $enlaces== "tutorias" || $enlaces="editarTutoria"){
 
 			$module =  "views/modules/".$enlaces.".php";
 		
@@ -58,6 +59,12 @@ class Paginas{
 		else if($enlaces == "cambioC"){
 
 			$module =  "views/modules/carreras.php";
+		
+		}
+
+		else if($enlaces == "cambioT"){
+
+			$module =  "views/modules/tutorias.php";
 		
 		}
 

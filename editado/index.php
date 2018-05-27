@@ -16,6 +16,8 @@ require_once "models/crudAlumnos.php";
 require_once "controllers/controllerAlumnos.php";
 require_once "models/crudCarreras.php";
 require_once "controllers/controllerCarreras.php";
+require_once "models/crudTutorias.php";
+require_once "controllers/controllerTutorias.php";
 //Para poder ver el template se hace la petición mediante un controlador.
 
 //creamos el objeto:

@@ -1,6 +1,8 @@
+
 <h1>INGRESAR</h1>
 
 	<form method="post">
+		<input type="" name="numTutor" placeholder="Numero de empleado" required>
 		
 		<input type="text" placeholder="Nombre de usuario" name="maestroIngreso" required>
 
